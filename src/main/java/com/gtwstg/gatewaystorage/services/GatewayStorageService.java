@@ -10,12 +10,12 @@ import com.azure.storage.blob.BlobServiceClient;
 import com.azure.storage.blob.BlobServiceClientBuilder;
 import com.azure.storage.blob.specialized.BlockBlobClient;
 import com.azure.storage.common.StorageSharedKeyCredential;
-import org.springframework.stereotype.Service;
 
+import org.springframework.stereotype.Service;
 
 @Service
 public class GatewayStorageService {
-    private static final String GATEWAY_STORAGE_FAILURE = "Gateway Storage - connection failed: ";
+    private static final String GATEWAY_STORAGE_FAILURE = "Gateway Storage: connection failed.";
 
     public String blobStorage(String totemPacketFileName, String totemPacketData) {
         try {
