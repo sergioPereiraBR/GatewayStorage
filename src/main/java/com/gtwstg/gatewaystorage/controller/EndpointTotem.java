@@ -1,6 +1,10 @@
 package com.gtwstg.gatewaystorage.controller;
 
 import java.net.URI;
+import java.time.OffsetDateTime;
+import java.time.ZoneOffset;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
 import javax.validation.Valid;
 
@@ -26,7 +30,8 @@ public class EndpointTotem {
 
     @GetMapping
     public String getGatewayTotem() {
-        return "Gateway Totem Storage online...";
+        Date date = new Date();        
+        return "Return from Totem Endpoint - " + date;
     }
 
     @PostMapping 
