@@ -13,7 +13,7 @@
 	<version>0.0.2-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>gatewaystorage</name>
-	<description>Gateway Storage </description>
+	<description>Gateway Storage</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
